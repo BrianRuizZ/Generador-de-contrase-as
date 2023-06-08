@@ -1,0 +1,140 @@
+
+body,html {
+    margin: 0;
+    padding: 0;
+    background: rgb(20, 20, 20);
+}
+
+h1 {
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 2.2em;
+    font-style: italic;
+    color: rgb(34, 34, 34);
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/1;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 5px 1fr 5px;
+    grid-template-rows:1fr 0.3fr;
+    margin: 120px auto;
+    padding: 20px;
+    background: rgb(97, 183, 233);
+    border-radius: 10px;
+}
+
+.res-cont {
+    font-size: 2em;
+    text-align: center;
+    width: auto;
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-family: monospace;
+    padding: 20px;
+}
+
+.resultado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.input-number {
+    margin: auto;
+    text-align: center;
+    background: rgb(184, 184, 184,0.2);
+    border-radius: 5px;
+    border: 1px solid black;
+    font-family: monospace;
+    max-width: 15%;
+    padding: 5px;
+    font-size: 2em;
+}
+
+.input{
+    margin: auto;
+    width: 70%;
+    background: rgb(184, 184, 184,0.2);
+    border-radius: 5px;
+    border: 1px solid black;
+    font-family: monospace;
+    padding: 5px;
+    font-size: 2em;
+}
+
+.input:focus {
+    outline: none;
+    background-color: rgb(184, 184, 184,0.5);
+}
+
+.input-number:focus {
+    outline: none;
+    background-color: rgb(184, 184, 184,0.5);
+}
+
+.boton-input {
+    background: none;
+    cursor: pointer;
+    margin: auto;
+    text-align: center;
+    font-family: monospace;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid black;
+    font-size: 1.7em;
+}
+
+.boton-copyActivo {
+    display: block;
+    background: none;
+    cursor: pointer;
+    margin: auto;
+    text-align: center;
+    font-family: monospace;
+    padding: 8px;
+    border-radius: 20px;
+    border: 1px solid black;
+    font-size: 1.6em;
+    text-transform: uppercase;
+}
+
+.boton-copy {
+    display: none;
+
+}
+
+.boton-input:hover {
+    background: rgba(68, 68, 68, 0.2);
+}
+
+.boton-copyActivo:hover {
+    background: rgba(68, 68, 68, 0.2);
+}
+
+
+.header {
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 1/1;
+    gap: 10px;
+}
+
+::selection {
+    background: rgb(29, 29, 29);
+    color: white;
+}
+
+@media (min-width: 577px) {
+
+}
