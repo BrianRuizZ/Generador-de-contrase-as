@@ -2,15 +2,15 @@
 body,html {
     margin: 0;
     padding: 0;
-    background: rgb(20, 20, 20);
+    background: rgb(100, 218, 130);
 }
 
 h1 {
-    font-family: sans-serif;
+    font-family: monospace;
     text-align: center;
-    font-size: 2.2em;
+    font-size: 2.6em;
     font-style: italic;
-    color: rgb(34, 34, 34);
+    color: rgb(15, 15, 15);
     display: grid;
     grid-column: 1/2;
     grid-row: 1/1;
@@ -26,10 +26,8 @@ h1 {
     display: grid;
     grid-template-columns: 5px 1fr 5px;
     grid-template-rows:1fr 0.3fr;
-    margin: 120px auto;
+    margin: 15vh auto;
     padding: 20px;
-    background: rgb(97, 183, 233);
-    border-radius: 10px;
 }
 
 .res-cont {
@@ -44,6 +42,7 @@ h1 {
 }
 
 .resultado {
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,11 +50,12 @@ h1 {
 }
 
 .input-number {
+    box-shadow: 2px 2px 3px rgba(2, 12, 1, 0.5);
     margin: auto;
     text-align: center;
     background: rgb(184, 184, 184,0.2);
     border-radius: 5px;
-    border: 1px solid black;
+    border: none;
     font-family: monospace;
     max-width: 15%;
     padding: 5px;
@@ -63,11 +63,12 @@ h1 {
 }
 
 .input{
+    box-shadow: 2px 2px 3px rgba(2, 12, 1, 0.5);
     margin: auto;
     width: 70%;
     background: rgb(184, 184, 184,0.2);
     border-radius: 5px;
-    border: 1px solid black;
+    border: none;
     font-family: monospace;
     padding: 5px;
     font-size: 2em;
@@ -84,32 +85,35 @@ h1 {
 }
 
 .boton-input {
-    background: none;
+    background: rgb(184, 184, 184,0.2);
+    box-shadow: 2px 2px 3px rgba(2, 12, 1, 0.5);
     cursor: pointer;
     margin: auto;
     text-align: center;
     font-family: monospace;
     padding: 10px;
     border-radius: 20px;
-    border: 1px solid black;
+    border: none;
     font-size: 1.7em;
 }
 
 .boton-copyActivo {
+    box-shadow: 2px 2px 3px rgba(2, 12, 1, 0.5);
     display: block;
-    background: none;
+    background:rgb(184, 184, 184,0.2);
     cursor: pointer;
     margin: auto;
     text-align: center;
     font-family: monospace;
     padding: 8px;
     border-radius: 20px;
-    border: 1px solid black;
+    border: none;
     font-size: 1.6em;
     text-transform: uppercase;
 }
 
 .boton-copy {
+    
     display: none;
 
 }
@@ -135,6 +139,10 @@ h1 {
     color: white;
 }
 
-@media (min-width: 577px) {
-
+/* Estilizar las flechas en Chrome y Safari */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
 }
